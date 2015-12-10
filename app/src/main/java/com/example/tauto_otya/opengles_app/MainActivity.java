@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         glSurfaceView = new GLSurfaceView(this);
         // GLRenderSample1 を変えることで、表示するものを変える
-        glSurfaceView.setRenderer(new GLRenderSample1());
+        glSurfaceView.setRenderer(new OpenGLSample_1_4(this));
         setContentView(glSurfaceView);
     }
 
